@@ -52,14 +52,78 @@ namespace Hello_World
 
                     
                     var rand = new Random();
-                    int num = rand.Next(1, 10);
+                    int num = rand.Next(0, 10);
                     Console.WriteLine(finalres[num] + " index " + num);
 
                 }
                 else if (menuSelect == "4")
                 {
+                    var rand = new Random();
+                    //int num = rand.Next(0, 10);
+                    int num = 0;
+                    Console.Write("Enter a string: ");
+                    string str = Console.ReadLine();
 
-                }else
+                    if (num == 0)
+                    {
+                        var t = str.Contains("es");
+                        if(t)
+                        {
+                            Console.WriteLine("String Contains es");
+                        }else
+                        {
+                            Console.WriteLine("String Doesn't Contain es");
+                        }
+                        
+                    }
+                    if (num == 0)
+                    {
+                        var x = str.Split(' ');
+                        foreach(string i in x)
+                        {
+                            Console.WriteLine(i);
+                        }
+                    }
+                    if (num == 0)
+                    {
+                        var x = str.Replace('e', 'a');
+                        Console.WriteLine(x);
+                    }
+                    if (num == 0)
+                    {
+                        var x = String.Join("bruh", str);
+                        Console.WriteLine(x);
+                    }
+                    if (num == 0)
+                    {
+                        var x = new string(str.ToCharArray().Reverse().ToArray());
+                        Console.WriteLine(x);
+                    }
+                    if (num == 0)
+                    {
+                        var l = str.ToCharArray();
+                        var x = from s in l orderby s select s;
+                        Console.WriteLine(new string(x.ToArray()));
+                    }
+                    if (num == 0)
+                    {
+
+                    }
+                    if (num == 0)
+                    {
+
+                    }
+                    if (num == 0)
+                    {
+
+
+                    }
+                    if (num == 0)
+                    {
+
+                    }
+                }
+                else
                 {
                     Console.WriteLine("Try Again.");
                 }
