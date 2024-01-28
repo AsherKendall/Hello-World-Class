@@ -12,12 +12,15 @@ namespace Hello_World
         {
             while (true)
             {
-                string menuSelect = Console.ReadLine();
+                Console.WriteLine(); //New Line
                 Console.WriteLine("1: Select Random Number 1-10");
-                Console.WriteLine("2: ");
+                Console.WriteLine("2: Print Current Date in ShortDate format");
                 Console.WriteLine("3: ");
                 Console.WriteLine("4: ");
                 Console.WriteLine(); //New Line
+
+                string menuSelect = Console.ReadLine();
+                
 
 
                 if (menuSelect == "1")
@@ -27,7 +30,7 @@ namespace Hello_World
                     Console.WriteLine(num);
                 } else if(menuSelect == "2")
                 {
-
+                    Console.WriteLine(DateTime.Now.ToShortDateString());
                 }
                 else if (menuSelect == "3")
                 {
