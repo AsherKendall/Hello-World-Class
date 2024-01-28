@@ -62,10 +62,11 @@ namespace Hello_World
                     //int num = rand.Next(0, 10);
                     int num = 0;
                     Console.Write("Enter a string: ");
-                    string str = Console.ReadLine();
+                    string str1 = Console.ReadLine();
 
                     if (num == 0)
                     {
+                        string str = str1;
                         var t = str.Contains("es");
                         if(t)
                         {
@@ -78,6 +79,7 @@ namespace Hello_World
                     }
                     if (num == 0)
                     {
+                        string str = str1;
                         var x = str.Split(' ');
                         foreach(string i in x)
                         {
@@ -86,41 +88,58 @@ namespace Hello_World
                     }
                     if (num == 0)
                     {
+                        string str = str1;
                         var x = str.Replace('e', 'a');
                         Console.WriteLine(x);
                     }
                     if (num == 0)
                     {
+                        string str = str1;
                         var x = String.Join("bruh", str);
                         Console.WriteLine(x);
                     }
                     if (num == 0)
                     {
+                        string str = str1;
                         var x = new string(str.ToCharArray().Reverse().ToArray());
                         Console.WriteLine(x);
                     }
                     if (num == 0)
                     {
+                        string str = str1;
                         var l = str.ToCharArray();
                         var x = from s in l orderby s select s;
                         Console.WriteLine(new string(x.ToArray()));
                     }
                     if (num == 0)
                     {
-
+                        string str = str1;
+                        var l = str.ToCharArray();
+                        var x = from s in l where s=='e' select s;
+                        Console.WriteLine(new string(x.ToArray()));
                     }
                     if (num == 0)
                     {
-
+                        string str = str1;
+                        var l = str.Split();
+                        string x = "";
+                        foreach(string i in l)
+                        {
+                            x += " " + new string(i.ToCharArray().Reverse().ToArray());
+                        }
+                        Console.WriteLine(new string(x.ToArray()));
+                    }   
+                    if (num == 0)
+                    {
+                        string str = str1;
+                        var x = str.ToUpper();
+                        Console.WriteLine(x);
                     }
                     if (num == 0)
                     {
-
-
-                    }
-                    if (num == 0)
-                    {
-
+                        string str = str1;
+                        var x = str.ToCharArray().Distinct().ToArray();
+                        Console.WriteLine(new string(x));
                     }
                 }
                 else
