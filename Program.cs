@@ -15,7 +15,7 @@ namespace Hello_World
                 Console.WriteLine(); //New Line
                 Console.WriteLine("1: Select Random Number 1-10");
                 Console.WriteLine("2: Print Current Date in ShortDate format");
-                Console.WriteLine("3: ");
+                Console.WriteLine("3: Sort and print random Name of 10 Dinos");
                 Console.WriteLine("4: ");
                 Console.WriteLine(); //New Line
 
@@ -34,6 +34,26 @@ namespace Hello_World
                 }
                 else if (menuSelect == "3")
                 {
+                    List<string> dinos = new List<string>()
+                    {
+                        "Hypacrosaurus",
+                        "Aeolosaurus",
+                        "Zanabazar",
+                        "Alamosaurus",                   
+                        "Nuthetes",
+                        "Szechuanosaurus",  
+                        "Torvosaurus",
+                        "Vulcanodon",
+                        "Acrotholus",
+                        "Pampadromaeus",
+                    };
+
+                    var finalres = dinos.OrderBy(n => n).ToList<string>();
+
+                    
+                    var rand = new Random();
+                    int num = rand.Next(1, 10);
+                    Console.WriteLine(finalres[num] + " index " + num);
 
                 }
                 else if (menuSelect == "4")
