@@ -16,7 +16,7 @@ namespace Hello_World
                 Console.WriteLine("1: Select Random Number 1-10");
                 Console.WriteLine("2: Print Current Date in ShortDate format");
                 Console.WriteLine("3: Sort and print random Name of 10 Dinos");
-                Console.WriteLine("4: ");
+                Console.WriteLine("4: Random String Manipulation");
                 Console.WriteLine(); //New Line
 
                 string menuSelect = Console.ReadLine();
@@ -59,8 +59,7 @@ namespace Hello_World
                 else if (menuSelect == "4")
                 {
                     var rand = new Random();
-                    //int num = rand.Next(0, 10);
-                    int num = 0;
+                    int num = rand.Next(0, 10);
                     Console.Write("Enter a string: ");
                     string str1 = Console.ReadLine();
 
@@ -77,7 +76,7 @@ namespace Hello_World
                         }
                         
                     }
-                    if (num == 0)
+                    if (num == 1)
                     {
                         string str = str1;
                         var x = str.Split(' ');
@@ -86,39 +85,39 @@ namespace Hello_World
                             Console.WriteLine(i);
                         }
                     }
-                    if (num == 0)
+                    if (num == 2)
                     {
                         string str = str1;
                         var x = str.Replace('e', 'a');
                         Console.WriteLine(x);
                     }
-                    if (num == 0)
+                    if (num == 3)
                     {
                         string str = str1;
                         var x = String.Join("bruh", str);
                         Console.WriteLine(x);
                     }
-                    if (num == 0)
+                    if (num == 4)
                     {
                         string str = str1;
                         var x = new string(str.ToCharArray().Reverse().ToArray());
                         Console.WriteLine(x);
                     }
-                    if (num == 0)
+                    if (num == 5)
                     {
                         string str = str1;
                         var l = str.ToCharArray();
                         var x = from s in l orderby s select s;
                         Console.WriteLine(new string(x.ToArray()));
                     }
-                    if (num == 0)
+                    if (num == 6)
                     {
                         string str = str1;
                         var l = str.ToCharArray();
                         var x = from s in l where s=='e' select s;
                         Console.WriteLine(new string(x.ToArray()));
                     }
-                    if (num == 0)
+                    if (num == 7)
                     {
                         string str = str1;
                         var l = str.Split();
@@ -129,13 +128,13 @@ namespace Hello_World
                         }
                         Console.WriteLine(new string(x.ToArray()));
                     }   
-                    if (num == 0)
+                    if (num == 8)
                     {
                         string str = str1;
                         var x = str.ToUpper();
                         Console.WriteLine(x);
                     }
-                    if (num == 0)
+                    if (num == 9)
                     {
                         string str = str1;
                         var x = str.ToCharArray().Distinct().ToArray();
