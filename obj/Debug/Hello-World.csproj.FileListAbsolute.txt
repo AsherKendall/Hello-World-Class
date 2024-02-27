@@ -13,3 +13,11 @@ C:\Users\asher\Source\Repos\Hello-World-Class\obj\Debug\Hello-World.csproj.Sugge
 C:\Users\asher\Source\Repos\Hello-World-Class\obj\Debug\Hello-World.csproj.CoreCompileInputs.cache
 C:\Users\asher\Source\Repos\Hello-World-Class\obj\Debug\Hello-World.exe
 C:\Users\asher\Source\Repos\Hello-World-Class\obj\Debug\Hello-World.pdb
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\bin\Debug\Hello-World.exe.config
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\bin\Debug\Hello-World.exe
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\bin\Debug\Hello-World.pdb
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\obj\Debug\Hello-World.csproj.AssemblyReference.cache
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\obj\Debug\Hello-World.csproj.SuggestedBindingRedirects.cache
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\obj\Debug\Hello-World.csproj.CoreCompileInputs.cache
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\obj\Debug\Hello-World.exe
+C:\Users\asher\source\repos\Assignment2UnitTests\Hello-World-Class\obj\Debug\Hello-World.pdb
