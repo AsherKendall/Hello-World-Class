@@ -154,29 +154,32 @@ namespace Hello_World
                 Functions.PrintMenu();
                 string menuSelect = Console.ReadLine();
 
-                if (menuSelect == "1")
-                {
-                    Console.WriteLine(Functions.RandomNumber());
-                } else if(menuSelect == "2")
-                {
-                    Console.WriteLine(Functions.PrintDate());
-                }
-                else if (menuSelect == "3")
-                {
-                    Console.WriteLine(Functions.RandomDinoSort());
 
-                }
-                else if (menuSelect == "4")
+                // Use Switch Statements\
+                int x = 0;
+                switch (Int32.TryParse(menuSelect, out x))
                 {
-                    Console.Write("Enter a string: ");
-                    string str1 = Console.ReadLine();
-                    Console.WriteLine(Functions.RandomStringManipulation(str1));
-                }
-                else
-                {
-                    Console.WriteLine("Try Again.");
+                    case 1:
+                        Console.WriteLine(Functions.RandomNumber());
+                        break;
+                    case 2:
+                        Console.WriteLine(Functions.PrintDate());
+                        break;
+                    case 3:
+                        Console.WriteLine(Functions.RandomDinoSort());
+                        break;
+
+                    case 4:
+                        Console.Write("Enter a string: ");
+                        string str1 = Console.ReadLine();
+                        Console.WriteLine(Functions.RandomStringManipulation(str1));
+                        break;
+                    default:
+                        Console.WriteLine("Try Again.");
+                        break;
                 }
             }
+                
 
         }
     }
